@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MatrixTrail
 {
@@ -10,6 +6,18 @@ namespace MatrixTrail
     {
         static void Main(string[] args)
         {
+            UserInputValidator i = new UserInputValidator();
+            i.ValidRowInput();
+            i.ValidColInput();
+
+            Matrix m = new Matrix();
+            m.MatrixArrayBuilder(i.RowsInput, i.ColsInput);
+
+            Console.ResetColor();
+            Console.WriteLine($"Sum of values of main diagonal is: {m.MatrixTrail}");
+
+            Console.ReadLine();
+
         }
     }
 }

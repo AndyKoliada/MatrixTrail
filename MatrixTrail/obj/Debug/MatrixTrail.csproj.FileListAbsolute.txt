@@ -1,0 +1,7 @@
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csprojAssemblyReference.cache
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\bin\Debug\MatrixTrail.exe.config
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\bin\Debug\MatrixTrail.exe
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\bin\Debug\MatrixTrail.pdb
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.exe
+C:\Users\Z\source\repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.pdb

@@ -1,0 +1,17 @@
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csprojAssemblyReference.cache
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\MatrixTrailTests.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\MatrixTrailTests.pdb
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\MatrixTrail.exe
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\MatrixTrail.pdb
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\MatrixTrail.exe.config
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csproj.CopyComplete
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.dll
+C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.pdb
