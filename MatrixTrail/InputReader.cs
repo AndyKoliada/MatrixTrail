@@ -2,7 +2,8 @@
 
 namespace MatrixTrail
 {
-    public class UserInputValidator
+    public class InputReader
+
     {
         int rowsInput = 0;
         int colsInput = 0;
@@ -10,10 +11,8 @@ namespace MatrixTrail
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
 
-        public void ValidRowInput()
+        public void ReadRowCount()
         {
-            Console.WriteLine("Let's create new matrix.");
-            Console.Write("Enter number of rows: ");
             
             while (!Int32.TryParse(Console.ReadLine(), out rowsInput))
             {
@@ -22,16 +21,13 @@ namespace MatrixTrail
 
         }
 
-        public void ValidColInput()
+        public void ReadColCount()
         {
-            Console.Write("Now enter number of columns: ");
 
             while (!Int32.TryParse(Console.ReadLine(), out colsInput))
             {
                 Console.WriteLine("Please enter valid number");
             }
-
-            Console.WriteLine();
 
         }
 

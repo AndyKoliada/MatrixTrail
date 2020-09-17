@@ -6,18 +6,35 @@ namespace MatrixTrail
     {
         static void Main(string[] args)
         {
-            UserInputValidator i = new UserInputValidator();
-            i.ValidRowInput();
-            i.ValidColInput();
+            #region INPUT
+            Console.WriteLine("Let's create new matrix.");
+            Console.Write("Enter number of rows: ");
 
+            InputReader i = new InputReader();
+            i.ReadRowCount();
+
+            Console.Write("Now enter number of columns: ");
+
+            i.ReadColCount();
+
+            Console.WriteLine();
+            #endregion
+
+            #region PROCESSING
             Matrix m = new Matrix();
             m.MatrixArrayBuilder(i.RowsInput, i.ColsInput);
+            #endregion
 
+            #region MATRIXOUTPUT
+            OutputWriter();
+            #endregion
+
+            #region RESULTOUTPUT
             Console.ResetColor();
             Console.WriteLine($"Sum of values of main diagonal is: {m.MatrixTrail}");
 
             Console.ReadLine();
-
+            #endregion
         }
     }
 }

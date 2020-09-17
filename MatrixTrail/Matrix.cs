@@ -7,10 +7,12 @@ namespace MatrixTrail
         int rowsInput = 0;
         int colsInput = 0;
         int matrixTrail = 0;
+        List<int> matrixArray = new int<RowsInput, ColsInput>;
 
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
         public int MatrixTrail { get => matrixTrail; set => matrixTrail = value; }
+        public int[,] MatrixArray { get => matrixArray; set => matrixArray = value; }
 
         public void MatrixArrayBuilder(int rows, int cols)
         {
@@ -25,15 +27,13 @@ namespace MatrixTrail
                 {
                     if (i == j)
                     {
-                        Console.ResetColor();
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.Write(string.Format("{0} ", matrixArray[i, j] = random.Next(min, max)));
-                        Console.ResetColor();
+                        matrixArray[i, j] = random.Next(min, max);
+                        
                         matrixTrail += matrixArray[i, j];
                     }
                     else
                     {
-                        Console.Write(string.Format("{0} ", matrixArray[i, j] = random.Next(min, max)));
+                        matrixArray[i, j] = random.Next(min, max);
                     }
                 }
                 Console.Write(Environment.NewLine + Environment.NewLine);
