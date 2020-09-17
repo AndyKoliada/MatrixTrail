@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputRestrictor.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="OutputWriter.cs" />
     <Compile Include="Program.cs" />

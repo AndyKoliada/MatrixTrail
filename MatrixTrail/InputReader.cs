@@ -11,26 +11,23 @@ namespace MatrixTrail
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
 
+        InputRestrictor r = new InputRestrictor();
+
         public void ReadRowCount()
         {
-            
             while (!Int32.TryParse(Console.ReadLine(), out rowsInput))
             {
-                Console.WriteLine("Please enter valid number");
+                r.IncorrectInputMessage();
             }
-
         }
 
         public void ReadColCount()
         {
-
             while (!Int32.TryParse(Console.ReadLine(), out colsInput))
             {
-                Console.WriteLine("Please enter valid number");
+                r.IncorrectInputMessage();
             }
-
         }
-
 
     }
 }

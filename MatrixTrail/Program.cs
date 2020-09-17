@@ -26,7 +26,8 @@ namespace MatrixTrail
             #endregion
 
             #region MATRIXOUTPUT
-            OutputWriter();
+            OutputWriter w = new OutputWriter();
+            w.DrawMatrix(m.MatrixArrayBuilder(i.RowsInput, i.ColsInput));
             #endregion
 
             #region RESULTOUTPUT

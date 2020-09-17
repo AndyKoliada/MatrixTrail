@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MatrixTrail
 {
-    class OutputWriter
-    {   
-        void DrawMatrix(int[,] matrixArray)
-        {   
+    public class OutputWriter
+    {
+        public void DrawMatrix(int[,] matrixArray)
+        {
             for (int i = 0; i < matrixArray.GetLength(0); i++)
             {
                 for (int j = 0; j < matrixArray.GetLength(1); j++)
@@ -28,5 +28,6 @@ namespace MatrixTrail
                 }
                 Console.Write(Environment.NewLine + Environment.NewLine);
             }
+        }   
     }
 }

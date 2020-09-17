@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MatrixTrail
 {
@@ -7,14 +8,14 @@ namespace MatrixTrail
         int rowsInput = 0;
         int colsInput = 0;
         int matrixTrail = 0;
-        List<int> matrixArray = new int<RowsInput, ColsInput>;
+
 
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
         public int MatrixTrail { get => matrixTrail; set => matrixTrail = value; }
-        public int[,] MatrixArray { get => matrixArray; set => matrixArray = value; }
 
-        public void MatrixArrayBuilder(int rows, int cols)
+
+        public int[,] MatrixArrayBuilder(int rows, int cols)
         {
             int[,] matrixArray = new int[rows, cols];
 
@@ -28,7 +29,6 @@ namespace MatrixTrail
                     if (i == j)
                     {
                         matrixArray[i, j] = random.Next(min, max);
-                        
                         matrixTrail += matrixArray[i, j];
                     }
                     else
@@ -36,8 +36,10 @@ namespace MatrixTrail
                         matrixArray[i, j] = random.Next(min, max);
                     }
                 }
-                Console.Write(Environment.NewLine + Environment.NewLine);
+
             }
+
+            return matrixArray;
         }
     }
 }
