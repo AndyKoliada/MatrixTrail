@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace MatrixTrail
 {
@@ -8,11 +7,12 @@ namespace MatrixTrail
         int rowsInput = 0;
         int colsInput = 0;
         int matrixTrail = 0;
+        private IPrinter printer;
+        readonly int[,] matrixArray = new int[rowsInput, cols];
 
-
-        public int RowsInput { get => rowsInput; set => rowsInput = value; }
-        public int ColsInput { get => colsInput; set => colsInput = value; }
-        public int MatrixTrail { get => matrixTrail; set => matrixTrail = value; }
+        //public int RowsInput { get => rowsInput; set => rowsInput = value; }
+        //public int ColsInput { get => colsInput; set => colsInput = value; }
+        //public int MatrixTrail { get => matrixTrail; set => matrixTrail = value; }
 
 
         public int[,] MatrixArrayBuilder(int rows, int cols)
@@ -40,6 +40,18 @@ namespace MatrixTrail
             }
 
             return matrixArray;
+        }
+
+        public IPrinter Printer { get; set; }
+
+        public void OutputMatrix(IPrinter printer)
+        {
+            this.Printer = printer;
+        }
+
+        public void Print()
+        {
+            Printer.Print(int[,] matrixArray);
         }
     }
 }

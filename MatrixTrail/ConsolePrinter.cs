@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MatrixTrail
 {
-    public class OutputWriter
+    public class ConsolePrinter : IPrinter
     {
-        public void DrawMatrix(int[,] matrixArray)
+        public void Print(int[,] matrixArray)
         {
             for (int i = 0; i < matrixArray.GetLength(0); i++)
             {

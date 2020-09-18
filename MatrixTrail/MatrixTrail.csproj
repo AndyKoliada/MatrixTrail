@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InputRestrictor.cs" />
+    <Compile Include="IPrinter.cs" />
     <Compile Include="Matrix.cs" />
-    <Compile Include="OutputWriter.cs" />
+    <Compile Include="ConsolePrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="InputReader.cs" />
