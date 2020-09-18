@@ -4,7 +4,7 @@ namespace MatrixTrail
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             #region INPUT
             Console.WriteLine("Let's create new matrix.");
@@ -22,12 +22,14 @@ namespace MatrixTrail
 
             #region PROCESSING
             Matrix m = new Matrix();
-            m.MatrixArrayBuilder(i.RowsInput, i.ColsInput);
+
             #endregion
 
             #region MATRIXOUTPUT
-            ConsolePrinter w = new ConsolePrinter();
-            w.DrawMatrix(m.MatrixArrayBuilder(i.RowsInput, i.ColsInput));
+
+            m.Printer = new ConsolePrinter();
+            m.Print(m.MatrixArrayBuilder(i.RowsInput, i.ColsInput));
+
             #endregion
 
             #region RESULTOUTPUT

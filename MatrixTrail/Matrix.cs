@@ -4,16 +4,9 @@ namespace MatrixTrail
 {
     public class Matrix
     {
-        int rowsInput = 0;
-        int colsInput = 0;
-        int matrixTrail = 0;
-        private IPrinter printer;
-        readonly int[,] matrixArray = new int[rowsInput, cols];
+        public int[,] MatrixArray { get; set; }
 
-        //public int RowsInput { get => rowsInput; set => rowsInput = value; }
-        //public int ColsInput { get => colsInput; set => colsInput = value; }
-        //public int MatrixTrail { get => matrixTrail; set => matrixTrail = value; }
-
+        public int MatrixTrail { get; set; } = 0;
 
         public int[,] MatrixArrayBuilder(int rows, int cols)
         {
@@ -29,7 +22,7 @@ namespace MatrixTrail
                     if (i == j)
                     {
                         matrixArray[i, j] = random.Next(min, max);
-                        matrixTrail += matrixArray[i, j];
+                        MatrixTrail += matrixArray[i, j];
                     }
                     else
                     {
@@ -43,15 +36,10 @@ namespace MatrixTrail
         }
 
         public IPrinter Printer { get; set; }
-
-        public void OutputMatrix(IPrinter printer)
+        
+        public void Print(int[,] matrixArray)
         {
-            this.Printer = printer;
-        }
-
-        public void Print()
-        {
-            Printer.Print(int[,] matrixArray);
+            Printer.Print(matrixArray);
         }
     }
 }

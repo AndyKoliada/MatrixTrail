@@ -11,7 +11,7 @@ namespace MatrixTrail
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
 
-        InputRestrictor r = new InputRestrictor();
+        readonly InputRestrictor r = new InputRestrictor();
 
         public void ReadRowCount()
         {
