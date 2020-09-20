@@ -10,7 +10,7 @@ namespace MatrixTrail.Tests
         public void UserInputValidatorTest()
         {
             //arrange
-            Matrix m = new Matrix();
+            MatrixBuilder m = new MatrixBuilder();
 
             //act
 

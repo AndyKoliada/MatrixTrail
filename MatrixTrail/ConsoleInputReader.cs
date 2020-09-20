@@ -2,7 +2,7 @@
 
 namespace MatrixTrail
 {
-    public class InputReader
+    public class ConsoleInputReader : IInputReader
 
     {
         int rowsInput = 0;
@@ -12,6 +12,12 @@ namespace MatrixTrail
         public int ColsInput { get => colsInput; set => colsInput = value; }
 
         readonly InputRestrictor r = new InputRestrictor();
+
+        public void ReadInput()
+        {
+            ReadRowCount();
+            ReadColCount();
+        }
 
         public void ReadRowCount()
         {

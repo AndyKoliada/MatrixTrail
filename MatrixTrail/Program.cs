@@ -10,7 +10,7 @@ namespace MatrixTrail
             Console.WriteLine("Let's create new matrix.");
             Console.Write("Enter number of rows: ");
 
-            InputReader i = new InputReader();
+            ConsoleInputReader i = new ConsoleInputReader();
             i.ReadRowCount();
 
             Console.Write("Now enter number of columns: ");
@@ -21,13 +21,13 @@ namespace MatrixTrail
             #endregion
 
             #region PROCESSING
-            Matrix m = new Matrix();
+            MatrixBuilder m = new MatrixBuilder();
 
             #endregion
 
             #region MATRIXOUTPUT
 
-            m.Printer = new ConsolePrinter();
+            //m.Printer = new ConsolePrinter();
             m.Print(m.MatrixArrayBuilder(i.RowsInput, i.ColsInput));
 
             #endregion
@@ -38,6 +38,14 @@ namespace MatrixTrail
 
             Console.ReadLine();
             #endregion
+
+            var matrix = new MatrixBuilder();
+            //matrix.ReadInput();
+            //matrix.Print();
+
+
+
+
         }
     }
 }

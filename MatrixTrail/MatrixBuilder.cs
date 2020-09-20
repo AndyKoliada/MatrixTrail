@@ -2,7 +2,7 @@
 
 namespace MatrixTrail
 {
-    public class Matrix
+    public class MatrixBuilder : IMatrixBuilder
     {
         public int[,] MatrixArray { get; set; }
 
