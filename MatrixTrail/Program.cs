@@ -1,50 +1,22 @@
 ﻿using System;
 
-namespace MatrixTrail
+namespace MatrixTrailCalculator
 {
     class Program
     {
         static void Main()
         {
-            #region INPUT
-            Console.WriteLine("Let's create new matrix.");
-            Console.Write("Enter number of rows: ");
+            var inputreader = new ConsoleInputReader();
+            var printer = new ConsolePrinter();
+            var matrix = new MatrixBuilder(inputreader, printer);
 
-            ConsoleInputReader i = new ConsoleInputReader();
-            i.ReadRowCount();
+            inputreader.ReadInput();
 
-            Console.Write("Now enter number of columns: ");
+            matrix.BuildMatrix(inputreader.RowsInput, inputreader.ColsInput);
 
-            i.ReadColCount();
+            printer.Print(matrix.MatrixArray);
 
-            Console.WriteLine();
-            #endregion
-
-            #region PROCESSING
-            MatrixBuilder m = new MatrixBuilder();
-
-            #endregion
-
-            #region MATRIXOUTPUT
-
-            //m.Printer = new ConsolePrinter();
-            m.Print(m.MatrixArrayBuilder(i.RowsInput, i.ColsInput));
-
-            #endregion
-
-            #region RESULTOUTPUT
-            Console.ResetColor();
-            Console.WriteLine($"Sum of values of main diagonal is: {m.MatrixTrail}");
-
-            Console.ReadLine();
-            #endregion
-
-            var matrix = new MatrixBuilder();
-            //matrix.ReadInput();
-            //matrix.Print();
-
-
-
+            printer.Print(matrix.MatrixTrail);
 
         }
     }

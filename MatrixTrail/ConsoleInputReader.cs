@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MatrixTrail
+namespace MatrixTrailCalculator
 {
     public class ConsoleInputReader : IInputReader
 
@@ -11,11 +11,12 @@ namespace MatrixTrail
         public int RowsInput { get => rowsInput; set => rowsInput = value; }
         public int ColsInput { get => colsInput; set => colsInput = value; }
 
-        readonly InputRestrictor r = new InputRestrictor();
-
         public void ReadInput()
         {
+            Console.WriteLine("Let's create new matrix!");
+            Console.Write("Enter number of rows: ");
             ReadRowCount();
+            Console.Write("Now enter number of columns: ");
             ReadColCount();
         }
 
@@ -23,7 +24,7 @@ namespace MatrixTrail
         {
             while (!Int32.TryParse(Console.ReadLine(), out rowsInput))
             {
-                r.IncorrectInputMessage();
+                Console.WriteLine("Please enter valid number");
             }
         }
 
@@ -31,10 +32,10 @@ namespace MatrixTrail
         {
             while (!Int32.TryParse(Console.ReadLine(), out colsInput))
             {
-                r.IncorrectInputMessage();
+                Console.WriteLine("Please enter valid number");
             }
         }
-
     }
+
 }
 

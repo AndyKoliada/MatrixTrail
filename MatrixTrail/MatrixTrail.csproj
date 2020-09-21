@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IInputReader.cs" />
-    <Compile Include="IMatrixBuilder.cs" />
-    <Compile Include="InputRestrictor.cs" />
-    <Compile Include="IPrinter.cs" />
+    <Compile Include="Interfaces\IInputReader.cs" />
+    <Compile Include="Interfaces\IPrinter.cs" />
     <Compile Include="MatrixBuilder.cs" />
     <Compile Include="ConsolePrinter.cs" />
     <Compile Include="Program.cs" />

@@ -1,7 +1,0 @@
-﻿namespace MatrixTrail
-{
-    interface IMatrixBuilder
-    {
-
-    }
-}

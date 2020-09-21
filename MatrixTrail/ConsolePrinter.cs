@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MatrixTrail
+namespace MatrixTrailCalculator
 {
     public class ConsolePrinter : IPrinter
     {
@@ -24,6 +24,12 @@ namespace MatrixTrail
                 }
                 Console.Write(Environment.NewLine + Environment.NewLine);
             }
-        }   
+        }
+
+        public void Print(int matrixTrail)
+        {
+            Console.WriteLine($"Sum of values of main diagonal is: {matrixTrail}");
+            Console.ReadLine();
+        }
     }
 }

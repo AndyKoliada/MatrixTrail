@@ -1,16 +1,26 @@
 ﻿using System;
 
-namespace MatrixTrail
+namespace MatrixTrailCalculator
 {
-    public class MatrixBuilder : IMatrixBuilder
+    public class MatrixBuilder
     {
+        public IPrinter Printer { get; set; }
+        
+        public IInputReader Inputreader { get; set; }
         public int[,] MatrixArray { get; set; }
+        public int MatrixTrail { get; set; }
 
-        public int MatrixTrail { get; set; } = 0;
 
-        public int[,] MatrixArrayBuilder(int rows, int cols)
+        public MatrixBuilder(IInputReader _inputreader, IPrinter _printer)
+        {
+            Inputreader = _inputreader;
+            Printer = _printer;
+        }
+
+        public int[,] BuildMatrix(int rows, int cols)
         {
             int[,] matrixArray = new int[rows, cols];
+            int matrixTrail = 0;
 
             int min = 0, max = 100;
             Random random = new Random();
@@ -22,7 +32,7 @@ namespace MatrixTrail
                     if (i == j)
                     {
                         matrixArray[i, j] = random.Next(min, max);
-                        MatrixTrail += matrixArray[i, j];
+                        matrixTrail += matrixArray[i, j];
                     }
                     else
                     {
@@ -31,15 +41,10 @@ namespace MatrixTrail
                 }
 
             }
-
-            return matrixArray;
+            MatrixArray = matrixArray;
+            MatrixTrail = matrixTrail;
+            return MatrixArray;
         }
 
-        public IPrinter Printer { get; set; }
-        
-        public void Print(int[,] matrixArray)
-        {
-            Printer.Print(matrixArray);
-        }
     }
 }
