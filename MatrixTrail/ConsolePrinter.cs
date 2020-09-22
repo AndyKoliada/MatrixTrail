@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace MatrixTrailCalculator
 {
@@ -12,6 +13,7 @@ namespace MatrixTrailCalculator
                 {
                     if (i == j)
                     {
+                        Thread.Sleep(50);
                         Console.ResetColor();
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.Write(string.Format("{0} ", matrixArray[i, j]));
@@ -19,6 +21,7 @@ namespace MatrixTrailCalculator
                     }
                     else
                     {
+                        Thread.Sleep(50);
                         Console.Write(string.Format("{0} ", matrixArray[i, j]));
                     }
                 }
@@ -28,6 +31,7 @@ namespace MatrixTrailCalculator
 
         public void Print(int matrixTrail)
         {
+            Thread.Sleep(1000);
             Console.WriteLine($"Sum of values of main diagonal is: {matrixTrail}");
             Console.ReadLine();
         }
