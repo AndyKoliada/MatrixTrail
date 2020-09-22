@@ -18,6 +18,7 @@ namespace MatrixTrailCalculator
             ReadRowCount();
             Console.Write("Now enter number of columns: ");
             ReadColCount();
+            Console.WriteLine();
         }
 
         public void ReadRowCount()
