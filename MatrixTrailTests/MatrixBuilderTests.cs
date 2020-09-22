@@ -19,7 +19,7 @@ namespace MatrixTrailCalculator.Tests
             int min = 0, max = 100;
             Random random = new Random();
 
-            m.BuildMatrix(random.Next(min, max), random.Next(min, max));
+            m.BuildMatrix((uint)random.Next(min, max), (uint)random.Next(min, max));
 
             //assert
             Assert.IsTrue(m.MatrixTrail >= 0);
