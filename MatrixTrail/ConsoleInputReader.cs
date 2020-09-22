@@ -5,11 +5,11 @@ namespace MatrixTrailCalculator
     public class ConsoleInputReader : IInputReader
 
     {
-        int rowsInput = 0;
-        int colsInput = 0;
+        uint rowsInput = 0;
+        uint colsInput = 0;
 
-        public int RowsInput { get => rowsInput; set => rowsInput = value; }
-        public int ColsInput { get => colsInput; set => colsInput = value; }
+        public uint RowsInput { get => rowsInput; set => rowsInput = value; }
+        public uint ColsInput { get => colsInput; set => colsInput = value; }
 
         public void ReadInput()
         {
@@ -22,17 +22,17 @@ namespace MatrixTrailCalculator
 
         public void ReadRowCount()
         {
-            while (!Int32.TryParse(Console.ReadLine(), out rowsInput))
+            while (!UInt32.TryParse(Console.ReadLine(), out rowsInput))
             {
-                Console.WriteLine("Please enter valid number");
+                Console.WriteLine("Please enter valid positive number");
             }
         }
 
         public void ReadColCount()
         {
-            while (!Int32.TryParse(Console.ReadLine(), out colsInput))
+            while (!UInt32.TryParse(Console.ReadLine(), out colsInput))
             {
-                Console.WriteLine("Please enter valid number");
+                Console.WriteLine("Please enter valid positive number");
             }
         }
     }

@@ -17,7 +17,7 @@ namespace MatrixTrailCalculator
             Printer = _printer;
         }
 
-        public int[,] BuildMatrix(int rows, int cols)
+        public int[,] BuildMatrix(uint rows, uint cols)
         {
             int[,] matrixArray = new int[rows, cols];
             int matrixTrail = 0;
