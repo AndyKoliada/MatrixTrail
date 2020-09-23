@@ -15,3 +15,7 @@ C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\bin\Debug\Microsoft.VisualS
 C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csproj.CopyComplete
 C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.dll
 C:\Users\Z\source\repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.pdb
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csprojAssemblyReference.cache
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.dll
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrailTests\obj\Debug\MatrixTrailTests.pdb

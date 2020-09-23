@@ -2,6 +2,6 @@
 {
     public interface IInputReader
     {
-        void ReadInput();
+        int[,] ReadInput();
     }
 }

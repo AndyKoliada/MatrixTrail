@@ -4,22 +4,22 @@ namespace MatrixTrailCalculator
 {
     public class MatrixBuilder
     {
-        public IPrinter Printer { get; set; }
-        
-        public IInputReader Inputreader { get; set; }
-        public int[,] MatrixArray { get; set; }
-        public int MatrixTrail { get; set; }
+        public IPrinter _print;
 
+        public IInputReader _readinput;
 
-        public MatrixBuilder(IInputReader _inputreader, IPrinter _printer)
+        public MatrixBuilder(IInputReader readinput, IPrinter print)
         {
-            Inputreader = _inputreader;
-            Printer = _printer;
+            _readinput = readinput;
+            _print = print;
         }
 
-        public int[,] BuildMatrix(uint rows, uint cols)
+        public int[,] BuildMatrix(int[,] matrixArray)
         {
-            int[,] matrixArray = new int[rows, cols];
+            matrixArray = _readinput.ReadInput();
+
+            int rows = matrixArray[1,0];
+            int cols = matrixArray[0,1];
             int matrixTrail = 0;
 
             int min = 0, max = 100;
@@ -41,9 +41,11 @@ namespace MatrixTrailCalculator
                 }
 
             }
-            MatrixArray = matrixArray;
-            MatrixTrail = matrixTrail;
-            return MatrixArray;
+
+            _print.Print(matrixArray);
+            _print.Print(matrixTrail);
+
+            return matrixArray;
         }
 
     }

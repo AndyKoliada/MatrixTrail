@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace MatrixTrailCalculator.Tests
 {
@@ -7,22 +6,17 @@ namespace MatrixTrailCalculator.Tests
     public class MatrixBuilderTests
     {
         [TestMethod()]
-        public void UserInputValidatorTest()
+        public void BuildMatrixTest()
         {
-            //arrange
-            var inputreader = new ConsoleInputReader();
+            var reader = new ConsoleInputReader();
             var printer = new ConsolePrinter();
-            MatrixBuilder m = new MatrixBuilder(inputreader, printer);
+            var matrix = new MatrixBuilder(reader, printer);
 
-            //act
+            
+            matrix.BuildMatrix(reader.ReadInput());
 
-            int min = 0, max = 100;
-            Random random = new Random();
 
-            m.BuildMatrix((uint)random.Next(min, max), (uint)random.Next(min, max));
-
-            //assert
-            Assert.IsTrue(m.MatrixTrail >= 0);
+            Assert.IsTrue(matrix.GetType() != reader.GetType());
         }
     }
 }

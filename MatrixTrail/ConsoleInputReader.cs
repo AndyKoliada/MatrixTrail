@@ -11,7 +11,7 @@ namespace MatrixTrailCalculator
         public uint RowsInput { get => rowsInput; set => rowsInput = value; }
         public uint ColsInput { get => colsInput; set => colsInput = value; }
 
-        public void ReadInput()
+        public int[,] ReadInput()
         {
             Console.WriteLine("Let's create new matrix!");
             Console.Write("Enter number of rows: ");
@@ -19,6 +19,7 @@ namespace MatrixTrailCalculator
             Console.Write("Now enter number of columns: ");
             ReadColCount();
             Console.WriteLine();
+            return new int[rowsInput, colsInput];
         }
 
         public void ReadRowCount()

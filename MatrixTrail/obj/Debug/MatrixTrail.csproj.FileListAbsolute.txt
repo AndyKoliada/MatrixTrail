@@ -12,3 +12,6 @@ C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csprojA
 C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csproj.CoreCompileInputs.cache
 C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.exe
 C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.pdb
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Andy\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csproj.CopyComplete

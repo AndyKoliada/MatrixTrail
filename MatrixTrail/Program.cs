@@ -1,23 +1,22 @@
-﻿using System;
+﻿using MatrixTrail.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace MatrixTrailCalculator
 {
     class Program
     {
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.Add(new ServiceDescriptor(typeof(IInputReader), new ConsoleInputReader()));
+            services.Add(new ServiceDescriptor(typeof(IPrinter), new ConsolePrinter()));
+        }
+
         static void Main()
         {
-            var inputreader = new ConsoleInputReader();
-            var printer = new ConsolePrinter();
-            var matrix = new MatrixBuilder(inputreader, printer);
-
-            inputreader.ReadInput();
-
-            matrix.BuildMatrix(inputreader.RowsInput, inputreader.ColsInput);
-
-            printer.Print(matrix.MatrixArray);
-
-            printer.Print(matrix.MatrixTrail);
 
         }
+
     }
 }
