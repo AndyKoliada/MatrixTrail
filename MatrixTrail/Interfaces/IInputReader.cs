@@ -2,6 +2,8 @@
 {
     public interface IInputReader
     {
-        int[,] ReadInput();
+        int[,] MatrixArray { get; set; }
+
+        void ReadInput();
     }
 }

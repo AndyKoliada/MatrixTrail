@@ -4,23 +4,15 @@ namespace MatrixTrailCalculator
 {
     public class MatrixBuilder
     {
-        public IPrinter _print;
+        public int MatrixTrail { get; set; }
+        public int[,] MatrixArray { get; set; }
 
-        public IInputReader _readinput;
 
-        public MatrixBuilder(IInputReader readinput, IPrinter print)
+        public void BuildMatrix(int[,] matrixArray)
         {
-            _readinput = readinput;
-            _print = print;
-        }
-
-        public int[,] BuildMatrix(int[,] matrixArray)
-        {
-            matrixArray = _readinput.ReadInput();
-
             int rows = matrixArray[1,0];
             int cols = matrixArray[0,1];
-            int matrixTrail = 0;
+            //int matrixTrail = 0;
 
             int min = 0, max = 100;
             Random random = new Random();
@@ -31,21 +23,19 @@ namespace MatrixTrailCalculator
                 {
                     if (i == j)
                     {
-                        matrixArray[i, j] = random.Next(min, max);
-                        matrixTrail += matrixArray[i, j];
+                        MatrixArray[i, j] = random.Next(min, max);
+                        MatrixTrail += MatrixArray[i, j];
                     }
                     else
                     {
-                        matrixArray[i, j] = random.Next(min, max);
+                        MatrixArray[i, j] = random.Next(min, max);
                     }
                 }
 
             }
-
-            _print.Print(matrixArray);
-            _print.Print(matrixTrail);
-
-            return matrixArray;
+            //MatrixTrail = matrixTrail;
+            //MatrixArray = matrixArray;
+            //return matrixArray;
         }
 
     }

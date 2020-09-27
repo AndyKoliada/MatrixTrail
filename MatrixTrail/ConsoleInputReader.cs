@@ -5,13 +5,14 @@ namespace MatrixTrailCalculator
     public class ConsoleInputReader : IInputReader
 
     {
+        public int[,] MatrixArray { get; set; }
         uint rowsInput = 0;
         uint colsInput = 0;
 
-        public uint RowsInput { get => rowsInput; set => rowsInput = value; }
-        public uint ColsInput { get => colsInput; set => colsInput = value; }
+        //public uint RowsInput { get => rowsInput; set => rowsInput = value; }
+        //public uint ColsInput { get => colsInput; set => colsInput = value; }
 
-        public int[,] ReadInput()
+        public void ReadInput()
         {
             Console.WriteLine("Let's create new matrix!");
             Console.Write("Enter number of rows: ");
@@ -19,7 +20,7 @@ namespace MatrixTrailCalculator
             Console.Write("Now enter number of columns: ");
             ReadColCount();
             Console.WriteLine();
-            return new int[rowsInput, colsInput];
+            MatrixArray = new int[rowsInput, colsInput];
         }
 
         public void ReadRowCount()
