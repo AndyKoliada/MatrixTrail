@@ -1,21 +1,18 @@
-﻿using System;
+﻿using MatrixTrail.Interfaces;
+using System;
 
 namespace MatrixTrailCalculator
 {
-    public class MatrixBuilder
+    public class MatrixBuilder : IMatrixBuilder
     {
         public int MatrixTrail { get; set; }
         public int[,] MatrixArray { get; set; }
 
-
-        public void BuildMatrix(int[,] matrixArray)
+        public void BuildMatrix(uint rows, uint cols)
         {
-            int rows = matrixArray[1,0];
-            int cols = matrixArray[0,1];
-            //int matrixTrail = 0;
-
             int min = 0, max = 100;
             Random random = new Random();
+            MatrixArray = new int[rows , cols];
 
             for (int i = 0; i < rows; i++)
             {
@@ -33,9 +30,7 @@ namespace MatrixTrailCalculator
                 }
 
             }
-            //MatrixTrail = matrixTrail;
-            //MatrixArray = matrixArray;
-            //return matrixArray;
+
         }
 
     }

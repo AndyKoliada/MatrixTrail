@@ -1,28 +1,30 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MatrixTrail;
+using MatrixTrail.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace MatrixTrailCalculator
 {
     class Program
     {
-
+        private static IServiceProvider serviceProvider;
         static void Main()
         {
+            RegisterServices();
+
+            var driver = new Driver(serviceProvider);
+            driver.Run();
+            
+        }
+
+        private static void RegisterServices()
+        {
             //setting up DI (registering services)
-            var serviceProvider = new ServiceCollection()
+            var collection = new ServiceCollection()
                 .AddSingleton<IInputReader, ConsoleInputReader>()
-                .AddSingleton<IPrinter, ConsolePrinter>()
-                .BuildServiceProvider();
-
-            //calling registered services from serviceProvider
-            var inputReader = serviceProvider.GetService<IInputReader>();
-            var printer = serviceProvider.GetService<IPrinter>();
-
-            var builder = new MatrixBuilder();
-            inputReader.ReadInput();
-            builder.BuildMatrix(inputReader.MatrixArray);
-
-            printer.Print(builder.MatrixArray);
-            printer.Print(builder.MatrixTrail);
+                .AddSingleton<IMatrixBuilder, MatrixBuilder>()
+                .AddSingleton<IPrinter, ConsolePrinter>();
+            serviceProvider = collection.BuildServiceProvider();
         }
 
     }

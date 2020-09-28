@@ -8,15 +8,12 @@ namespace MatrixTrailCalculator.Tests
         [TestMethod()]
         public void BuildMatrixTest()
         {
-            var reader = new ConsoleInputReader();
-            var printer = new ConsolePrinter();
-            var matrix = new MatrixBuilder(reader, printer);
+            var matrix = new MatrixBuilder();
 
-            
-            matrix.BuildMatrix(reader.ReadInput());
+            matrix.BuildMatrix(5, 5);
 
 
-            Assert.IsTrue(matrix.GetType() != reader.GetType());
+            Assert.IsTrue(matrix.MatrixTrail > 0);
         }
     }
 }

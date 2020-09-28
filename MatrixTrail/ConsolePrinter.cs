@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MatrixTrail.Interfaces;
+using System;
 using System.Threading;
 
 namespace MatrixTrailCalculator

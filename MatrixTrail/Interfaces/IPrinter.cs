@@ -1,4 +1,4 @@
-﻿namespace MatrixTrailCalculator
+﻿namespace MatrixTrail.Interfaces
 {
     public interface IPrinter
     {

@@ -1,16 +1,16 @@
-﻿using System;
+﻿using MatrixTrail.Interfaces;
+using System;
 
 namespace MatrixTrailCalculator
 {
     public class ConsoleInputReader : IInputReader
 
     {
-        public int[,] MatrixArray { get; set; }
+        public uint RowsInput { get; set; }
+        public uint ColsInput { get; set; }
+
         uint rowsInput = 0;
         uint colsInput = 0;
-
-        //public uint RowsInput { get => rowsInput; set => rowsInput = value; }
-        //public uint ColsInput { get => colsInput; set => colsInput = value; }
 
         public void ReadInput()
         {
@@ -20,7 +20,8 @@ namespace MatrixTrailCalculator
             Console.Write("Now enter number of columns: ");
             ReadColCount();
             Console.WriteLine();
-            MatrixArray = new int[rowsInput, colsInput];
+            RowsInput = rowsInput;
+            ColsInput = colsInput;
         }
 
         public void ReadRowCount()
