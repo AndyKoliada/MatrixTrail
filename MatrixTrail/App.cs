@@ -1,20 +1,18 @@
 ﻿using MatrixTrail.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace MatrixTrail
 {
-    class Driver
+    class App
     {
         readonly IInputReader inputPromt;
         readonly IMatrixBuilder builder;
         readonly IPrinter printer;
 
-        public Driver(IServiceProvider serviceProvider)
+        public App(IInputReader inputPromt, IMatrixBuilder builder, IPrinter printer)
         {
-            inputPromt = serviceProvider.GetService<IInputReader>();
-            builder = serviceProvider.GetService<IMatrixBuilder>();
-            printer = serviceProvider.GetService<IPrinter>();
+            this.inputPromt = inputPromt;
+            this.builder = builder;
+            this.printer = printer;
         }
 
         public void Run()

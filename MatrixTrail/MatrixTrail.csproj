@@ -77,7 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Driver.cs" />
+    <Compile Include="App.cs" />
     <Compile Include="Interfaces\IInputReader.cs" />
     <Compile Include="Interfaces\IMatrixBuilder.cs" />
     <Compile Include="Interfaces\IPrinter.cs" />

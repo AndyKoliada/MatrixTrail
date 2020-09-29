@@ -33,3 +33,14 @@ C:\Users\Z\Source\Repos\matrixtrail2\MatrixTrail\obj\Debug\MatrixTrail.csproj.Co
 C:\Users\Z\Source\Repos\matrixtrail2\MatrixTrail\obj\Debug\MatrixTrail.csproj.CopyComplete
 C:\Users\Z\Source\Repos\matrixtrail2\MatrixTrail\obj\Debug\MatrixTrail.exe
 C:\Users\Z\Source\Repos\matrixtrail2\MatrixTrail\obj\Debug\MatrixTrail.pdb
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Z\Source\Repos\matrixtrail\MatrixTrail\obj\Debug\MatrixTrail.csproj.CopyComplete
